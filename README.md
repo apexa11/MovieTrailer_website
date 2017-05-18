@@ -1,6 +1,6 @@
 Project 1: Movie Trailer Website
 
-by Steven Wooding
+by Apexa Patel
 
 Movie trailer website project, part of the Udacity Full Stack Web Developer Nanodegree.
 
