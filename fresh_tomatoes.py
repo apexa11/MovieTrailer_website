@@ -2,7 +2,7 @@ import webbrowser
 import os
 import re
 
-# Styles and scripting for the page
+# Styles and scripting for the page.
 main_page_head = '''
 <head>
     <meta charset="utf-8">
@@ -82,7 +82,7 @@ main_page_head = '''
 </head>
 '''
 
-# The main page layout and title bar
+# The main page layout and title bar.
 main_page_content = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -99,7 +99,7 @@ main_page_content = '''
         </div>
       </div>
     </div>
-    
+
     <!-- Main Page Content -->
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -126,7 +126,7 @@ movie_tile_content = '''
 '''
 
 def create_movie_tiles_content(movies):
-    # The HTML content for this section of the page
+    # The HTML content for this section of the page.
     content = ''
     for movie in movies:
         # Extract the youtube ID from the url
@@ -143,7 +143,7 @@ def create_movie_tiles_content(movies):
     return content
 
 def open_movies_page(movies):
-  # Create or overwrite the output file
+  # Create or overwrite the output file.
   output_file = open('fresh_tomatoes.html', 'w')
 
   # Replace the placeholder for the movie tiles with the actual dynamically generated content
