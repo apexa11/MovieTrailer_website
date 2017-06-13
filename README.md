@@ -19,7 +19,9 @@ The Python executable should be in your default path, which the Python installer
 >>This project consists for the following files:
 
 1.entertainment.py - main Python script to run
+
 2.media.py - contains the class Movie that stores movie details
+
 3.fresh_tomatoes.py - creates the HTML file for the website (Udacity supplied)
 
 # How to Run Project?
