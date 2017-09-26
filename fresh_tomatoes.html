@@ -1,7 +1,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="udacity-grader" content="walkthrough.json">
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
@@ -12,9 +11,18 @@
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-            background-color: black;
-            color: white;
-        }
+            background-color:#7B7B7A;
+            color: #CCC;
+            }
+            a.navbar-brand.title{
+             margin-left:405px;
+             font-size: 30px;
+             color:white;
+             padding-left:431px;
+            }
+        h2{
+          font-size:20px;
+          }
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -31,16 +39,15 @@
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 10px;
-            padding-top: 10px;
+            margin-bottom: 20px;
+            padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #403E3D  ;
+            background-color:#636263;
             cursor: pointer;
-            color: black;
-            padding: 5px 0;
-
-
+        }
+        .movie-tile img {
+            box-shadow: 7px 7px 12px #222;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -104,56 +111,65 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Famous Movie Trailers</a>
+            <a class="navbar-brand title" href="#">Famous Movie Trailers</a>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PrgNK7KKoiw" data-toggle="modal" data-target="#trailer">
-    <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcReedjA2vJSO4_6GDpsI3PShvbRqfAAEv03qaJ9qOxtiLZX0Jx7" width="220" height="342">
-    <h2>fast and furious</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sOEg_YZQsTI" data-toggle="modal" data-target="#trailer">
-    <img src="http://www.cinejosh.com/newsimg/newsmainimg/bahubali-maa-tv-premieres-on-october-25_b_2909150516.jpg" width="220" height="342">
-    <h2>Bahubali</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="9ItBvH5J6ss" data-toggle="modal" data-target="#trailer">
-    <img src="http://wskg.org/wp-content/uploads/2017/01/0421-1.jpg" width="220" height="342">
-    <h2>fault in our stars</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="uZNHIU3uHT4" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg " width="220" height="342">
-    <h2>avatar</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="IVqpcSqokkw" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY1200_CR88,0,630,1200_AL_.jpg " width="220" height="342">
-    <h2>titanic</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="TDBYGMe93jo" data-toggle="modal" data-target="#trailer">
-    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_UY1200_CR90,0,630,1200_AL_.jpg  " width="220" height="342">
-    <h2>minions</h2>
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2gCc6kGpXdw" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png" width="220" height="342">
+    <h2>Moonlight</h2>
+    <p>Story about Gay black Boy</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="wu8_5TGwr90" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg" width="220" height="342">
     <h2>Arrival</h2>
+    <p>versatile science fiction film.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="9ItBvH5J6ss" data-toggle="modal" data-target="#trailer">
+    <img src="http://wskg.org/wp-content/uploads/2017/01/0421-1.jpg" width="220" height="342">
+    <h2>The Fault in Our Stars</h2>
+    <p>Lovestory About Life & death</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="uZNHIU3uHT4" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg" width="220" height="342">
+    <h2>Avatar</h2>
+    <p>lush alien world of Pandora</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="IVqpcSqokkw" data-toggle="modal" data-target="#trailer">
+    <img src="http://sim03.in.com/62/70f97856e24185ff5343f3b3046d4449_pt_xl.jpg" width="220" height="342">
+    <h2>Titanic</h2>
+    <p>Love story</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="TDBYGMe93jo" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71-Wt11rDvL._SL1500_.jpg" width="220" height="342">
+    <h2>Minions</h2>
+    <p>American computer-animated comedy film</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sOEg_YZQsTI" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/711eHgGtnFL._SX385_.jpg" width="220" height="342">
+    <h2>Bahubali</h2>
+    <p>Two brothers clash for control of a kingdom.</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0LmwToJlefE" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Deadpool_poster.jpg" width="220" height="342">
     <h2>Deadpool</h2>
+    <p>spider and his life story</p>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2gCc6kGpXdw" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png" width="220" height="342">
-    <h2>Moonlight</h2>
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PrgNK7KKoiw" data-toggle="modal" data-target="#trailer">
+    <img src="https://i.pinimg.com/736x/8e/57/d6/8e57d61b4fedcd6e42bdd83ca7e6ed81--fast--fast-and-forious-.jpg" width="220" height="342">
+    <h2>Fast and Furious</h2>
+    <p>A film about racing cars</p>
 </div>
 
     </div>

@@ -2,24 +2,17 @@ import webbrowser
 
 
 class Movie():
-    """This class Provides a wayo store movie related information """
+    """Stores movie-related information.
 
-    valid_rating = ['G', 'PG', 'PG-13', 'R'] # attributes share bt all Movies
+    Attributes:
+        title: Title of the movie
+        storyline: The tagline of the movie (usually printed on its poster)
+        poster_image_url: Pointer to the movie poster on WikiMedia
+        trailer_youtube_url: Pointer to the official movie trailer on YouTube
+    """
 
-""" This Method creates new Movie
+    valid_rating = ['G', 'PG', 'PG-13', 'R']
 
-    :param movie_title:title
-    :type  movie_title:str
-
-    :param movie_storyline:storyline
-    :type  movie_storyline:str
-
-    :param poster_image:poster imageUrl
-    :type  poster_image:str
-
-    :param movie_trailer:YouTube trailerUrl
-    :type  movie_trailer:str
-"""
     def __init__(
         self,
         movie_title,
@@ -35,7 +28,4 @@ class Movie():
     """Plays the embedded YouTube video."""
 
     def show_trailer(self):
-        """ This method check current movie trailer in class object"""
-            :returns: str --the movie trailer , opens the youtube movie preview
-        """
         webbrowser.open(self.trailer_youtube_url)

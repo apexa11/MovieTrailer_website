@@ -16,7 +16,18 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-        }
+            background-color:#7B7B7A;
+            color: #CCC;
+            }
+            a.navbar-brand.title{
+             margin-left:405px;
+             font-size: 30px;
+             color:white;
+             padding-left:431px;
+            }
+        h2{
+          font-size:20px;
+          }
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -37,8 +48,11 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color:#636263;
             cursor: pointer;
+        }
+        .movie-tile img {
+            box-shadow: 7px 7px 12px #222;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -105,7 +119,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Famous Movie Trailers</a>
+            <a class="navbar-brand title" href="#">Famous Movie Trailers</a>
           </div>
         </div>
       </div>
@@ -122,6 +136,7 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
+    <p>{movie_storyline}</p>
 </div>
 '''
 
@@ -137,6 +152,7 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            movie_storyline=movie.storyline,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
