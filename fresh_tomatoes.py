@@ -22,10 +22,11 @@ main_page_head = '''
             font-family:'PT Sans', sans-serif;
         }
         a.navbar-brand.title{
-             margin-left:405px;
+             width: 100%;
+             margin: 0 auto;
              font-size: 30px;
              color:white;
-             padding-left:431px;
+             
         }
         h2{
           font-size:26px;
@@ -72,11 +73,20 @@ main_page_head = '''
             background-color: white;
         }
         .navbar {
-            min-height: 65spx;
+            min-height: 65px;
             border-bottom: 3px solid #3498db;
         }
         .navbar-brand {
             marigin-top: 8px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .navbar-header {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .container {
+            text-align: center;
         }
         div > p {
              margin: 0 2rem;
