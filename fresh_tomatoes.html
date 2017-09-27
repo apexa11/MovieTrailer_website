@@ -4,6 +4,7 @@
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -11,18 +12,20 @@
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-            background-color:#7B7B7A;
+            background: linear-gradient(to right, #2b5876, #4e4376);
             color: #CCC;
-            }
-            a.navbar-brand.title{
+            font-family:'PT Sans', sans-serif;
+        }
+        a.navbar-brand.title{
              margin-left:405px;
              font-size: 30px;
              color:white;
              padding-left:431px;
-            }
+        }
         h2{
-          font-size:20px;
-          }
+          font-size:26px;
+          color: white;
+        }
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -39,12 +42,13 @@
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 25px;
+            padding-top: 25px;
         }
         .movie-tile:hover {
-            background-color:#636263;
+            background: linear-gradient(to bottom, #606c88, #3f4c6b);
             cursor: pointer;
+            border-radius: 3%;
         }
         .movie-tile img {
             box-shadow: 7px 7px 12px #222;
@@ -61,6 +65,18 @@
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .navbar {
+            min-height: 65spx;
+            border-bottom: 3px solid #3498db;
+        }
+        .navbar-brand {
+            marigin-top: 8px;
+        }
+        div > p {
+             margin: 0 2rem;
+             font-size: 17px;
+             color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
