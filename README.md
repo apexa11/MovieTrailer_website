@@ -1,8 +1,10 @@
 # Project 1: Movie Trailer Website
 
-by Apexa Patel
+by Apexa Patel 
 
 Movie trailer website project, part of the Udacity Full Stack Web Developer Nanodegree.
+
+You can checkout my live website here: https://apexa11.github.io/MovieTrailer_website/fresh_tomatoes.html
 
 # What it is and does?
 
